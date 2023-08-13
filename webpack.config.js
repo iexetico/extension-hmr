@@ -21,6 +21,7 @@ module.exports = {
   entry: {
     background: [resolve(__dirname, 'background.js')],
     content: [resolve(__dirname, 'content.js')],
+    'main-dom': [resolve(__dirname, 'main-dom.js')],
   },
   output: {
     filename: '[name].js',
