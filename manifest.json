@@ -2,7 +2,7 @@
   "name": "aassd",
   "version": "1.2.2",
   "manifest_version": 2,
-  "web_accessible_resources": ["*.hot-update.json", "test.js"],
+  "web_accessible_resources": ["*.hot-update.json", "main-dom.js"],
   "permissions": ["tabs", "https://ya.ru/*"],
   "background": {
     "persistent": true,

@@ -20,6 +20,7 @@ module.exports = {
   devtool: 'inline-source-map',
   entry: {
     background: [resolve(__dirname, 'background.js')],
+    'main-dom': [resolve(__dirname, 'main-dom.js')],
     content: [resolve(__dirname, 'content.js')],
   },
   output: {
