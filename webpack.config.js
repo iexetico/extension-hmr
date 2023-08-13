@@ -30,7 +30,7 @@ module.exports = {
   },
   plugins: [
     new webpack.HotModuleReplacementPlugin(),
-    new CrxLoadScriptWebpackPlugin(),
+    // new CrxLoadScriptWebpackPlugin(),
     new ReactRefreshWebpackPlugin({
       overlay: false,
     }),
