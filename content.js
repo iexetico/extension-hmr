@@ -10,6 +10,6 @@ script.type = 'text/javascript'
 script.src = chrome.runtime.getURL('main-dom.js')
 document.head.prepend(script)
 
-const div = document.createElement('div')
-document.body.append(div)
-createRoot(div).render(<App />)
+// const div = document.createElement('div')
+// document.body.append(div)
+// createRoot(div).render(<App />)

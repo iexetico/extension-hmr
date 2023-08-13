@@ -12,7 +12,7 @@ module.exports = {
     client: {
       webSocketURL: 'ws://localhost:8080/ws',
     },
-    allowedHosts: ['ya.ru'],
+    allowedHosts: ['www.ea.com'],
     devMiddleware: {
       writeToDisk: true,
     },
