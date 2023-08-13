@@ -1,18 +1,22 @@
 {
   "name": "aassd",
   "version": "1.2.2",
-  "manifest_version": 2,
-  "web_accessible_resources": ["*.hot-update.json", "main-dom.js"],
-  "permissions": ["tabs", "https://www.ea.com/*", "ws://localhost:8080"],
-  "background": {
-    "persistent": true,
-    "scripts": ["background.js"]
-  },
-  "content_scripts": [
+  "manifest_version": 3,
+  "permissions": ["scripting"],
+  "web_accessible_resources": [
     {
-      "js": ["content.js"],
+      "resources": ["*.hot-update.json", "*.hot-update.js", "main-dom.js"],
       "matches": ["https://www.ea.com/*"]
     }
   ],
-  "content_security_policy": "script-src 'self' 'unsafe-eval' https://cdn.jsdelivr.net/npm/p5@0.10.2/lib/p5.min.js; object-src 'self'"
+  "host_permissions": ["https://www.ea.com/*"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "js": ["./content.js"],
+      "matches": ["https://www.ea.com/*"]
+    }
+  ]
 }

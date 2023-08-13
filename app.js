@@ -3,16 +3,16 @@ import React from 'react'
 export const App = () => {
   return (
     <div
-      style={{
-        position: "fixed",
-        zIndex: 99999,
-        background: "white",
-        color: "black",
-        left: 0,
-        top: 0,
-      }}
+    // style={{
+    //   position: "fixed",
+    //   zIndex: 99999,
+    //   background: "white",
+    //   color: "black",
+    //   left: 0,
+    //   top: 0,
+    // }}
     >
       TE1fST123
     </div>
-  );
-};
+  )
+}
