@@ -1,21 +1,16 @@
 {
   "name": "aassd",
   "version": "1.2.2",
-  "manifest_version": 3,
-  "permissions": ["scripting"],
-  "web_accessible_resources": [
-    {
-      "resources": ["*.hot-update.json"],
-      "matches": ["https://ya.ru/*"]
-    }
-  ],
-  "host_permissions": ["https://ya.ru/*"],
+  "manifest_version": 2,
+  "web_accessible_resources": ["*.hot-update.json", "test.js"],
+  "permissions": ["tabs", "https://ya.ru/*"],
   "background": {
-    "service_worker": "background.js"
+    "persistent": true,
+    "scripts": ["background.js"]
   },
   "content_scripts": [
     {
-      "js": ["./content.js"],
+      "js": ["content.js"],
       "matches": ["https://ya.ru/*"]
     }
   ]
